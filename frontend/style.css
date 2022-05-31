@@ -1,0 +1,210 @@
+.button {
+	border: 0.10em solid black;
+	height: 2.5em;
+	line-height: 2.5em;
+	display: inline-block;
+	text-decoration: none;
+	padding: 1.0em;
+	margin-left: 0.1em;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+	border-radius: 0.3em;
+
+}
+
+img {
+	height: 2.5em;
+	padding: 1.0em;
+	margin-left: 0.1em;
+	margin-top: 0.0em;
+	margin-bottom: 0.2em;
+
+	vertical-align: middle;
+}
+
+.x_button {
+	position: fixed;
+	top: 0em;
+	right: 0em;
+	padding: 1em;
+}
+
+#navigation_desktop {
+	display: inline-block;
+	margin-top: 1.5em;
+	cursor: pointer;
+	width: fit-content;
+	
+	margin: auto;
+	border: 0.2em solid rebeccapurple;
+}
+
+
+
+#mobile_meniu_ontop {
+	cursor: pointer;
+	display: none;
+	background-color: silver;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+
+.mobile_logo {
+	text-align: center;
+	height: 2em;
+	border: 0.2em solid rebeccapurple;
+}
+
+.desktop_logo {
+	margin-right: 0.1em;
+	margin-left: auto;
+	border: 0.2em solid blue;
+}
+
+.mobile_meniu_button {
+	cursor: pointer;
+	height: 3em;
+	line-height: 3em;
+	border: 0.2em solid khaki;
+
+}
+
+.main {
+	border: 0.2em solid red;
+	margin: auto;
+	width: 80%;
+}
+
+.logo_img {
+
+	vertical-align: middle;
+
+	height: 6em;
+	border: 2px solid greenyellow;
+}
+
+#navigation_mobile {
+	width: fit-content;
+	border: 0.2em solid forestgreen;
+	width: 100%;
+	margin: auto;
+}
+.navigation_mobile_button{
+	display: inline-block;
+	border: 0em solid rebeccapurple;
+	/* position: fixed;	 */
+	height: 2.5em;
+	line-height: 2.5em;
+	
+	margin-left: auto;
+	margin-right: 0px;
+	
+	
+	background-color: transparent;
+}
+
+
+/* .nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 500em;
+	height: 55px;
+	background-color: #34495e;
+	border-radius: 0.5em;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 3.5	em;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 200px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-apie, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-renginys, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-registracija, a:nth-child(3):hover~.animation {
+	width: 240px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-paremti, a:nth-child(4):hover~.animation {
+	width: 150px;
+	left: 450px;
+	background-color: #9b59b6;
+}
+nav .start-kontaktai, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 600px;
+	background-color: #e67e22;
+}
+
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #2c3e50;
+}
+h1 {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #ecf0f1;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: 'Cherry Swash', cursive;
+}
+
+p {
+    position: relative;
+    top: 35%;
+    width: 20em;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
+}
+
+span {
+    color: #2BD6B4;
+} */

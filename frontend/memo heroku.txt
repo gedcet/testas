@@ -1,0 +1,28 @@
+npm install -g heroku
+
+heroku --version
+
+heroku login 
+
+heroku create
+
+git push heroku
+
+package.json faile nurodome:
+
+{
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.1",
+    "heroku": "^7.60.2"
+  },
+    "scripts": {
+    "start": "node app.js"
+  }
+}
+
+jei heroke pervadiname subdomena tai .git/config failas ir 
+
+[remote "heroku"]
+	url = https://git.heroku.com/avektrorius.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*

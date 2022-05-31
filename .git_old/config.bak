@@ -1,0 +1,21 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[user]
+	email = gedcet@gmail.com
+	name = gedcet
+[credential]
+	helper = store --file .git/credentials
+[remote "origin"]
+	url = https://github.com/gedcet/avektorius
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[remote "heroku"]
+	url = https://git.heroku.com/glacial-anchorage-41632.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*

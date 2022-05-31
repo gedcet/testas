@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>A vektorius</title>
+</head>
+
+<body>
+
+    <div id="navigation_mobile">
+        <img src="./img/a_vektorius_logo_2.svg">
+        <button class="navigation_mobile_button" onclick="show_mob_meniu()">═</button>
+    </div>
+
+    <!-- meniu narsykleje -->
+    <div id="navigation_desktop">
+        <img src="./img/a_vektorius_logo_2.svg">
+
+        <a class="button" onclick="Show_actual_content(`apie_mus`)">Apie mus</a>
+        <a class="button" onclick="Show_actual_content(`renginys`)">Renginys</a>
+        <a class="button" onClick="Show_actual_content(`registracijos_forma`)">Registracijos forma </a>
+        <a class="button" onClick="Show_actual_content(`paremti`)">Paremti</a>
+        <a class="button" onClick="Show_actual_content(`kontaktai`)">Kontaktai</a>
+    </div>
+
+    <!-- meniu mobiliame -->
+    <div id="mobile_meniu_ontop">
+        <div class="mobile_logo"> LOGO </div>
+        <div class="mobile_meniu_button" onclick="Show_actual_content(`apie_mus`); hide_mob_meniu()">Apie mus</div>
+        <div class="mobile_meniu_button" onclick="Show_actual_content(`renginys`); hide_mob_meniu()">Renginys</div>
+        <div class="mobile_meniu_button" onclick="Show_actual_content(`registracijos_forma`); hide_mob_meniu()">
+            Registracijos forma </div>
+        <div class="mobile_meniu_button" onclick="Show_actual_content(`paremti`); hide_mob_meniu()">Paremti</div>
+        <div class="mobile_meniu_button" onclick="Show_actual_content(`kontaktai`); hide_mob_meniu()">Kontaktai</div>
+        <div class="x_button" onclick="hide_mob_meniu()">X</div>
+    </div>
+
+    <div id="apie_mus">
+        <p>
+            1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam optio, in nesciunt at quod
+            aliquid eos alias quo. Nostrum similique debitis voluptatibus asperiores fugiat quas dignissimos, quasi
+            atque veritatis pariatur.
+        </p>
+    </div>
+    <div id="renginys">
+        <p>
+            2. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam optio, in nesciunt at quod
+            aliquid eos alias quo. Nostrum similique debitis voluptatibus asperiores fugiat quas dignissimos, quasi
+            atque veritatis pariatur.
+        </p>
+    </div>
+    <div id="registracijos_forma">
+        <p>
+            3. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam optio, in nesciunt at quod
+            aliquid eos alias quo. Nostrum similique debitis voluptatibus asperiores fugiat quas dignissimos, quasi
+            atque veritatis pariatur.
+        </p>
+    </div>
+    <div id="paremti">
+        <p>
+            4. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam optio, in nesciunt at quod
+            aliquid eos alias quo. Nostrum similique debitis voluptatibus asperiores fugiat quas dignissimos, quasi
+            atque veritatis pariatur.
+        </p>
+    </div>
+    <div id="kontaktai">
+        <p>
+            5. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam optio, in nesciunt at quod
+            aliquid eos alias quo. Nostrum similique debitis voluptatibus asperiores fugiat quas dignissimos, quasi
+            atque veritatis pariatur.
+        </p>
+    </div>
+    <script>
+        const page_width = () =>
+        {
+            if (window.innerWidth < 1000)
+            {
+                document.getElementById("navigation_mobile").style.display = "block"
+                document.getElementById("navigation_desktop").style.display = "none"
+            }
+            else
+            {
+                document.getElementById("navigation_mobile").style.display = "none"
+                document.getElementById("navigation_desktop").style.display = "block"
+            }
+        }
+
+        setInterval(page_width, 1000)
+
+        const show_mob_meniu = () => { document.getElementById("mobile_meniu_ontop").style.display = "block" }
+        const hide_mob_meniu = () => { document.getElementById("mobile_meniu_ontop").style.display = "none" }
+
+        const Show_actual_content = (a) =>
+        {
+            // pradziai visus blokus isjungima
+            document.getElementById("apie_mus").style.display = "none"
+            document.getElementById("renginys").style.display = "none"
+            document.getElementById("registracijos_forma").style.display = "none"
+            document.getElementById("paremti").style.display = "none"
+            document.getElementById("kontaktai").style.display = "none"
+            // rodom tik su mygtuku paspausta bloka jis saugomas a kintmajame
+            document.getElementById(a).style.display = "block"
+        }
+
+        Show_actual_content("apie_mus")
+
+    </script>
+</body>
+
+</html>
